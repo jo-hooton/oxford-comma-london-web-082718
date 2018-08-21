@@ -7,4 +7,5 @@ def oxford_comma(array)
     puts ([array(0)]", "[array(1)]" and "[array(2)])
   else array.size > 3
     puts "something"
+  end
 end
