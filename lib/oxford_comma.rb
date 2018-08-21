@@ -3,7 +3,7 @@ def oxford_comma(array)
     array.join
   elsif array.size == 2
     array.join( " and " )
-  elsif *head, tail = array.map(&:values)
+  elsif array.map(&:values)
     [head.join(", "), tail].join(" and ")
   else
     puts "something"
