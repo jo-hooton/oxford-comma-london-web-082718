@@ -3,8 +3,7 @@ def oxford_comma(array)
     array.join
   elsif array.size == 2
     array.join( " and " )
-  elsif array.size == 3
-    array.join("," -1 " and ")
+  elsif joined = array.map(&:values).flatten.join(", ")
   else 
     puts "something"
   end
